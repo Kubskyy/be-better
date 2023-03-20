@@ -1,4 +1,4 @@
-import { User, Todo } from './types';
+import { User } from './types';
 
 export const users: User[] = [
   {
@@ -9,18 +9,4 @@ export const users: User[] = [
     id: '1',
     name: 'Magda Krasowska',
   },
-];
-
-export const todos: Todo[] = [
-  {
-    id:'0',
-    text: 'Wypic 2l wody',
-    done: false,
-  },
-  {
-    id:'1',
-    text: 'Isc na silke',
-    done: true,
-  },
-
 ];
