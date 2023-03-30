@@ -46,16 +46,16 @@ const App = () => {
   return (
     <div>
       <ul>
-        {(data ?? []).map((todo) => (
+        {(data ?? []).map((todo : any) => (
           <li key={todo.id} 
           style={{ textDecoration: todo.done ? 'line-through' : 'none' }}
           >
             <input
               type="checkbox"
-              checked={todo.done}
+              checked={todo.status}
               onChange={() => handleCheckTodo(todo.id, todo.done)}
             />
-            {todo.text}{' '}
+            {todo.content}{' '}
             <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
           </li>
         ))}
